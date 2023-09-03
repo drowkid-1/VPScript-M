@@ -91,7 +91,7 @@ install_inicial() {
   os_system
   repo "${vercion}"
   msgi -bar2
-  echo -e " \e[5m\e[1;100m   =====>> ►►     MULTI SCRIPT     ◄◄ <<=====    \e[1;37m"
+  echo -e " \e[5m\e[1;100m   =====>> ►►   ◇  VPScript-V2L ◇     ◄◄ <<=====    \e[1;37m"
   msgi -bar2
   #-- VERIFICAR VERSION
   msgi -ama "   PREPARANDO INSTALACION | VERSION: $vesaoSCT"
@@ -113,7 +113,7 @@ password required pam_permit.so' >/etc/pam.d/common-password && chmod +x /etc/pa
   fun_ip() {
     TUIP=$(wget -qO- ifconfig.me)
     echo "$TUIP" >/root/.ssh/authrized_key.reg
-    echo -e "\e[1;97m ESTA ES TU IP PUBLICA? \e[32m$TUIP"
+    echo -e "\e[1;97m ¿Tu ip es..? \e[32m$TUIP"
     msgi -bar2
     echo -ne "\e[1;97m Seleccione  \e[1;31m[\e[1;93m S \e[1;31m/\e[1;93m N \e[1;31m]\e[1;97m: \e[1;93m" && read tu_ip
     #read -p " Seleccione [ S / N ]: " tu_ip
@@ -129,9 +129,9 @@ password required pam_permit.so' >/etc/pam.d/common-password && chmod +x /etc/pa
   #read -p " Seleccione [ S / N ]: " tu_ip
   [[ "$pass_root" = "s" || "$pass_root" = "S" ]] && pass_root
   msgi -bar2
-  echo -e "\e[1;93m\a\a\a      SE PROCEDERA A INSTALAR LAS ACTULIZACIONES\n PERTINENTES DEL SISTEMA, ESTE PROCESO PUEDE TARDAR\n VARIOS MINUTOS Y PUEDE PEDIR ALGUNAS CONFIRMACIONES \e[0;37m"
+  echo -e "\e[1;93m\a\a\a      SE PROCEDERA A INSTALAR LAS ACTUALIZACIONES\n PERTINENTES DEL SISTEMA, ESTE PROCESO PUEDE TARDAR\n VARIOS MINUTOS Y PUEDE PEDIR ALGUNAS CONFIRMACIONES \e[0;37m"
   msgi -bar
-  read -t 120 -n 1 -rsp $'\e[1;97m           Preciona Enter Para continuar\n'
+  read -t 120 -n 1 -rsp $'\e[1;97m           Presiona Enter Para continuar\n'
   clear && clear
   apt update
   apt upgrade -y
