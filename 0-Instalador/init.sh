@@ -143,7 +143,7 @@ time_reboot() {
   clear && clear
   msgi -bar
   echo -e "\e[1;93m     CONTINUARA INSTALACION DESPUES DEL REBOOT"
-  echo -e "\e[1;93m         O EJECUTE EL COMANDO: \e[1;92mLATAM -c "
+  echo -e "\e[1;93m         O EJECUTE EL COMANDO: \e[1;92mCRTL -c "
   msgi -bar
   REBOOT_TIMEOUT="$1"
   while [ $REBOOT_TIMEOUT -gt 0 ]; do
@@ -183,7 +183,7 @@ install_paquetes() {
   /bin/cp /etc/skel/.bashrc ~/
   #------- BARRA DE ESPERA
   msgi -bar2
-  echo -e " \e[5m\e[1;100m   =====>> ►►     MULTI SCRIPT     ◄◄ <<=====    \e[1;37m"
+  echo -e " \e[5m\e[1;100m   =====>> ►►     VPScript-MxL     ◄◄ <<=====    \e[1;37m"
   msgi -bar
   echo -e "   \e[1;41m    -- INSTALACION PAQUETES FALTANTES --    \e[49m"
   msgi -bar
