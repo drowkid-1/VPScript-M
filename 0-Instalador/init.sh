@@ -818,19 +818,10 @@ echo -ne "\e[1;97mDigite solo el numero segun su respuesta:\e[32m "
 read opcao
 case $opcao in
 1)
-  install_vps_mx_85_oficial
-  ;;
-2)
-  install_LACASITA_90
-  ;;
-3)
-  install_ADMRufu
-  ;;
-4)
   install_ChumoGH
   ;;
-5)
-  install_latam
+2)
+  install_ADMRufu
   ;;
 esac
 exit
